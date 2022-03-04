@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":6};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":6,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -173,8 +173,32 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asSucceededPaymentDetail--">asSucceededPaymentDetail</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getAmountInMinor--">getAmountInMinor</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>java.util.Date</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getCreatedAt--">getCreatedAt</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getCurrency--">getCurrency</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getId--">getId</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/truelayer/java/payments/entities/paymentmethod/PaymentMethod.html" title="class in com.truelayer.java.payments.entities.paymentmethod">PaymentMethod</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getPaymentMethod--">getPaymentMethod</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>abstract <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/Status.html" title="enum in com.truelayer.java.payments.entities.paymentdetail">Status</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getStatus--">getStatus</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/truelayer/java/payments/entities/User.html" title="class in com.truelayer.java.payments.entities">User</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getUser--">getUser</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -272,10 +296,64 @@ extends java.lang.Object</pre>
 <a name="asSettledPaymentDetail--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>asSettledPaymentDetail</h4>
 <pre>public&nbsp;<a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html" title="class in com.truelayer.java.payments.entities.paymentdetail">SettledPaymentDetail</a>&nbsp;asSettledPaymentDetail()</pre>
+</li>
+</ul>
+<a name="getId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getId</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getId()</pre>
+</li>
+</ul>
+<a name="getAmountInMinor--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAmountInMinor</h4>
+<pre>public&nbsp;int&nbsp;getAmountInMinor()</pre>
+</li>
+</ul>
+<a name="getCurrency--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCurrency</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getCurrency()</pre>
+</li>
+</ul>
+<a name="getUser--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUser</h4>
+<pre>public&nbsp;<a href="../../../../../../com/truelayer/java/payments/entities/User.html" title="class in com.truelayer.java.payments.entities">User</a>&nbsp;getUser()</pre>
+</li>
+</ul>
+<a name="getPaymentMethod--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPaymentMethod</h4>
+<pre>public&nbsp;<a href="../../../../../../com/truelayer/java/payments/entities/paymentmethod/PaymentMethod.html" title="class in com.truelayer.java.payments.entities.paymentmethod">PaymentMethod</a>&nbsp;getPaymentMethod()</pre>
+</li>
+</ul>
+<a name="getCreatedAt--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getCreatedAt</h4>
+<pre>public&nbsp;java.util.Date&nbsp;getCreatedAt()</pre>
 </li>
 </ul>
 </li>

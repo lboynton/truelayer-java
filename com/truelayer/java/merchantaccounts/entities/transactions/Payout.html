@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">Payout</span>
+<pre>public final class <span class="typeNameLabel">Payout</span>
 extends <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html" title="class in com.truelayer.java.merchantaccounts.entities.transactions">Transaction</a></pre>
 </li>
 </ul>
@@ -158,7 +158,15 @@ extends <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#Payout--">Payout</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#Payout-java.lang.String-com.truelayer.java.entities.CurrencyCode-int-com.truelayer.java.merchantaccounts.entities.transactions.Transaction.Status-java.lang.String-java.lang.String-com.truelayer.java.entities.beneficiary.Beneficiary-com.truelayer.java.merchantaccounts.entities.transactions.Payout.ContextCode-java.lang.String-">Payout</a></span>(java.lang.String&nbsp;id,
+      <a href="../../../../../../com/truelayer/java/entities/CurrencyCode.html" title="enum in com.truelayer.java.entities">CurrencyCode</a>&nbsp;currency,
+      int&nbsp;amountInMinor,
+      <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.Status.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Transaction.Status</a>&nbsp;status,
+      java.lang.String&nbsp;createdAt,
+      java.lang.String&nbsp;settledAt,
+      <a href="../../../../../../com/truelayer/java/entities/beneficiary/Beneficiary.html" title="class in com.truelayer.java.entities.beneficiary">Beneficiary</a>&nbsp;beneficiary,
+      <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.ContextCode.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Payout.ContextCode</a>&nbsp;contextCode,
+      java.lang.String&nbsp;payoutId)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -176,8 +184,60 @@ extends <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#canEqual-java.lang.Object-">canEqual</a></span>(java.lang.Object&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getAmountInMinor--">getAmountInMinor</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/truelayer/java/entities/beneficiary/Beneficiary.html" title="class in com.truelayer.java.entities.beneficiary">Beneficiary</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getBeneficiary--">getBeneficiary</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.ContextCode.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Payout.ContextCode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getContextCode--">getContextCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getCreatedAt--">getCreatedAt</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/truelayer/java/entities/CurrencyCode.html" title="enum in com.truelayer.java.entities">CurrencyCode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getCurrency--">getCurrency</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getId--">getId</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getPayoutId--">getPayoutId</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getSettledAt--">getSettledAt</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.Status.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Transaction.Status</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getStatus--">getStatus</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.Type.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Transaction.Type</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#getType--">getType</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -185,14 +245,14 @@ extends <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.truelayer.java.merchantaccounts.entities.transactions.<a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html" title="class in com.truelayer.java.merchantaccounts.entities.transactions">Transaction</a></h3>
-<code><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html#asExternalPayment--">asExternalPayment</a>, <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html#asMerchantAccountPayment--">asMerchantAccountPayment</a>, <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html#asPayout--">asPayout</a>, <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html#getType--">getType</a></code></li>
+<code><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html#asExternalPayment--">asExternalPayment</a>, <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html#asMerchantAccountPayment--">asMerchantAccountPayment</a>, <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html#asPayout--">asPayout</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -208,13 +268,22 @@ extends <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Payout--">
+<a name="Payout-java.lang.String-com.truelayer.java.entities.CurrencyCode-int-com.truelayer.java.merchantaccounts.entities.transactions.Transaction.Status-java.lang.String-java.lang.String-com.truelayer.java.entities.beneficiary.Beneficiary-com.truelayer.java.merchantaccounts.entities.transactions.Payout.ContextCode-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Payout</h4>
-<pre>public&nbsp;Payout()</pre>
+<pre>@ConstructorProperties(value={"id","currency","amountInMinor","status","createdAt","settledAt","beneficiary","contextCode","payoutId"})
+public&nbsp;Payout(java.lang.String&nbsp;id,
+                                                                                                                                                      <a href="../../../../../../com/truelayer/java/entities/CurrencyCode.html" title="enum in com.truelayer.java.entities">CurrencyCode</a>&nbsp;currency,
+                                                                                                                                                      int&nbsp;amountInMinor,
+                                                                                                                                                      <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.Status.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Transaction.Status</a>&nbsp;status,
+                                                                                                                                                      java.lang.String&nbsp;createdAt,
+                                                                                                                                                      java.lang.String&nbsp;settledAt,
+                                                                                                                                                      <a href="../../../../../../com/truelayer/java/entities/beneficiary/Beneficiary.html" title="class in com.truelayer.java.entities.beneficiary">Beneficiary</a>&nbsp;beneficiary,
+                                                                                                                                                      <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.ContextCode.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Payout.ContextCode</a>&nbsp;contextCode,
+                                                                                                                                                      java.lang.String&nbsp;payoutId)</pre>
 </li>
 </ul>
 </li>
@@ -228,10 +297,143 @@ extends <a href="../../../../../../com/truelayer/java/merchantaccounts/entities/
 <a name="getSettledAt--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getSettledAt</h4>
 <pre>public&nbsp;java.util.Optional&lt;java.lang.String&gt;&nbsp;getSettledAt()</pre>
+</li>
+</ul>
+<a name="getType--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getType</h4>
+<pre>public&nbsp;<a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.Type.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Transaction.Type</a>&nbsp;getType()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html#getType--">getType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.html" title="class in com.truelayer.java.merchantaccounts.entities.transactions">Transaction</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getId</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getId()</pre>
+</li>
+</ul>
+<a name="getCurrency--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCurrency</h4>
+<pre>public&nbsp;<a href="../../../../../../com/truelayer/java/entities/CurrencyCode.html" title="enum in com.truelayer.java.entities">CurrencyCode</a>&nbsp;getCurrency()</pre>
+</li>
+</ul>
+<a name="getAmountInMinor--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAmountInMinor</h4>
+<pre>public&nbsp;int&nbsp;getAmountInMinor()</pre>
+</li>
+</ul>
+<a name="getStatus--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatus</h4>
+<pre>public&nbsp;<a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Transaction.Status.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Transaction.Status</a>&nbsp;getStatus()</pre>
+</li>
+</ul>
+<a name="getCreatedAt--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCreatedAt</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getCreatedAt()</pre>
+</li>
+</ul>
+<a name="getBeneficiary--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBeneficiary</h4>
+<pre>public&nbsp;<a href="../../../../../../com/truelayer/java/entities/beneficiary/Beneficiary.html" title="class in com.truelayer.java.entities.beneficiary">Beneficiary</a>&nbsp;getBeneficiary()</pre>
+</li>
+</ul>
+<a name="getContextCode--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContextCode</h4>
+<pre>public&nbsp;<a href="../../../../../../com/truelayer/java/merchantaccounts/entities/transactions/Payout.ContextCode.html" title="enum in com.truelayer.java.merchantaccounts.entities.transactions">Payout.ContextCode</a>&nbsp;getContextCode()</pre>
+</li>
+</ul>
+<a name="getPayoutId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPayoutId</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getPayoutId()</pre>
+</li>
+</ul>
+<a name="toString--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(java.lang.Object&nbsp;o)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="canEqual-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>canEqual</h4>
+<pre>protected&nbsp;boolean&nbsp;canEqual(java.lang.Object&nbsp;other)</pre>
+</li>
+</ul>
+<a name="hashCode--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
 </li>
 </ul>
 </li>

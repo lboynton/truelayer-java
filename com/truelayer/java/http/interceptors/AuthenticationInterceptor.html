@@ -147,7 +147,8 @@ implements okhttp3.Interceptor</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/truelayer/java/http/interceptors/AuthenticationInterceptor.html#AuthenticationInterceptor--">AuthenticationInterceptor</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/truelayer/java/http/interceptors/AuthenticationInterceptor.html#AuthenticationInterceptor-com.truelayer.java.auth.IAuthenticationHandler-java.util.List-">AuthenticationInterceptor</a></span>(<a href="../../../../../com/truelayer/java/auth/IAuthenticationHandler.html" title="interface in com.truelayer.java.auth">IAuthenticationHandler</a>&nbsp;authenticationHandler,
+                         java.util.List&lt;java.lang.String&gt;&nbsp;scopes)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -190,13 +191,15 @@ implements okhttp3.Interceptor</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AuthenticationInterceptor--">
+<a name="AuthenticationInterceptor-com.truelayer.java.auth.IAuthenticationHandler-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AuthenticationInterceptor</h4>
-<pre>public&nbsp;AuthenticationInterceptor()</pre>
+<pre>@ConstructorProperties(value={"authenticationHandler","scopes"})
+public&nbsp;AuthenticationInterceptor(<a href="../../../../../com/truelayer/java/auth/IAuthenticationHandler.html" title="interface in com.truelayer.java.auth">IAuthenticationHandler</a>&nbsp;authenticationHandler,
+                                                                                                  java.util.List&lt;java.lang.String&gt;&nbsp;scopes)</pre>
 </li>
 </ul>
 </li>

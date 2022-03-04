@@ -147,7 +147,7 @@ implements okhttp3.Interceptor</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/truelayer/java/http/interceptors/SignatureInterceptor.html#SignatureInterceptor--">SignatureInterceptor</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/truelayer/java/http/interceptors/SignatureInterceptor.html#SignatureInterceptor-com.truelayer.java.SigningOptions-">SignatureInterceptor</a></span>(<a href="../../../../../com/truelayer/java/SigningOptions.html" title="class in com.truelayer.java">SigningOptions</a>&nbsp;signingOptions)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -190,13 +190,14 @@ implements okhttp3.Interceptor</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SignatureInterceptor--">
+<a name="SignatureInterceptor-com.truelayer.java.SigningOptions-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SignatureInterceptor</h4>
-<pre>public&nbsp;SignatureInterceptor()</pre>
+<pre>@ConstructorProperties(value="signingOptions")
+public&nbsp;SignatureInterceptor(<a href="../../../../../com/truelayer/java/SigningOptions.html" title="class in com.truelayer.java">SigningOptions</a>&nbsp;signingOptions)</pre>
 </li>
 </ul>
 </li>

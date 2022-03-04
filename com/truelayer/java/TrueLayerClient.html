@@ -141,6 +141,12 @@ implements <a href="../../../com/truelayer/java/ITrueLayerClient.html" title="in
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../com/truelayer/java/TrueLayerClient.html#TrueLayerClient-com.truelayer.java.auth.IAuthenticationHandler-com.truelayer.java.hpp.IHostedPaymentPageLinkBuilder-">TrueLayerClient</a></span>(<a href="../../../com/truelayer/java/auth/IAuthenticationHandler.html" title="interface in com.truelayer.java.auth">IAuthenticationHandler</a>&nbsp;authenticationHandler,
                <a href="../../../com/truelayer/java/hpp/IHostedPaymentPageLinkBuilder.html" title="interface in com.truelayer.java.hpp">IHostedPaymentPageLinkBuilder</a>&nbsp;hostedPaymentPageLinkBuilder)</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/truelayer/java/TrueLayerClient.html#TrueLayerClient-com.truelayer.java.auth.IAuthenticationHandler-com.truelayer.java.payments.IPaymentsApi-com.truelayer.java.merchantaccounts.IMerchantAccountsApi-com.truelayer.java.hpp.IHostedPaymentPageLinkBuilder-">TrueLayerClient</a></span>(<a href="../../../com/truelayer/java/auth/IAuthenticationHandler.html" title="interface in com.truelayer.java.auth">IAuthenticationHandler</a>&nbsp;authenticationHandler,
+               <a href="../../../com/truelayer/java/payments/IPaymentsApi.html" title="interface in com.truelayer.java.payments">IPaymentsApi</a>&nbsp;paymentsHandler,
+               <a href="../../../com/truelayer/java/merchantaccounts/IMerchantAccountsApi.html" title="interface in com.truelayer.java.merchantaccounts">IMerchantAccountsApi</a>&nbsp;merchantAccountsHandler,
+               <a href="../../../com/truelayer/java/hpp/IHostedPaymentPageLinkBuilder.html" title="interface in com.truelayer.java.hpp">IHostedPaymentPageLinkBuilder</a>&nbsp;hostedPaymentPageLinkBuilder)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -211,11 +217,24 @@ implements <a href="../../../com/truelayer/java/ITrueLayerClient.html" title="in
 <a name="TrueLayerClient-com.truelayer.java.auth.IAuthenticationHandler-com.truelayer.java.hpp.IHostedPaymentPageLinkBuilder-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>TrueLayerClient</h4>
 <pre>public&nbsp;TrueLayerClient(<a href="../../../com/truelayer/java/auth/IAuthenticationHandler.html" title="interface in com.truelayer.java.auth">IAuthenticationHandler</a>&nbsp;authenticationHandler,
                        <a href="../../../com/truelayer/java/hpp/IHostedPaymentPageLinkBuilder.html" title="interface in com.truelayer.java.hpp">IHostedPaymentPageLinkBuilder</a>&nbsp;hostedPaymentPageLinkBuilder)</pre>
+</li>
+</ul>
+<a name="TrueLayerClient-com.truelayer.java.auth.IAuthenticationHandler-com.truelayer.java.payments.IPaymentsApi-com.truelayer.java.merchantaccounts.IMerchantAccountsApi-com.truelayer.java.hpp.IHostedPaymentPageLinkBuilder-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>TrueLayerClient</h4>
+<pre>@ConstructorProperties(value={"authenticationHandler","paymentsHandler","merchantAccountsHandler","hostedPaymentPageLinkBuilder"})
+public&nbsp;TrueLayerClient(<a href="../../../com/truelayer/java/auth/IAuthenticationHandler.html" title="interface in com.truelayer.java.auth">IAuthenticationHandler</a>&nbsp;authenticationHandler,
+                                                                                                                                                          <a href="../../../com/truelayer/java/payments/IPaymentsApi.html" title="interface in com.truelayer.java.payments">IPaymentsApi</a>&nbsp;paymentsHandler,
+                                                                                                                                                          <a href="../../../com/truelayer/java/merchantaccounts/IMerchantAccountsApi.html" title="interface in com.truelayer.java.merchantaccounts">IMerchantAccountsApi</a>&nbsp;merchantAccountsHandler,
+                                                                                                                                                          <a href="../../../com/truelayer/java/hpp/IHostedPaymentPageLinkBuilder.html" title="interface in com.truelayer.java.hpp">IHostedPaymentPageLinkBuilder</a>&nbsp;hostedPaymentPageLinkBuilder)</pre>
 </li>
 </ul>
 </li>

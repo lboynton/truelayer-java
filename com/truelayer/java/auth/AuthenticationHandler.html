@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -111,7 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">AuthenticationHandler</span>
+<pre>public final class <span class="typeNameLabel">AuthenticationHandler</span>
 extends java.lang.Object
 implements <a href="../../../../com/truelayer/java/auth/IAuthenticationHandler.html" title="interface in com.truelayer.java.auth">IAuthenticationHandler</a></pre>
 </li>
@@ -132,7 +132,8 @@ implements <a href="../../../../com/truelayer/java/auth/IAuthenticationHandler.h
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/truelayer/java/auth/AuthenticationHandler.html#AuthenticationHandler--">AuthenticationHandler</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/truelayer/java/auth/AuthenticationHandler.html#AuthenticationHandler-com.truelayer.java.ClientCredentials-com.truelayer.java.auth.IAuthenticationApi-">AuthenticationHandler</a></span>(<a href="../../../../com/truelayer/java/ClientCredentials.html" title="class in com.truelayer.java">ClientCredentials</a>&nbsp;clientCredentials,
+                     <a href="../../../../com/truelayer/java/auth/IAuthenticationApi.html" title="interface in com.truelayer.java.auth">IAuthenticationApi</a>&nbsp;authenticationApi)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -150,14 +151,34 @@ implements <a href="../../../../com/truelayer/java/auth/IAuthenticationHandler.h
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/truelayer/java/auth/AuthenticationHandler.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/truelayer/java/auth/IAuthenticationApi.html" title="interface in com.truelayer.java.auth">IAuthenticationApi</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/truelayer/java/auth/AuthenticationHandler.html#getAuthenticationApi--">getAuthenticationApi</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../com/truelayer/java/ClientCredentials.html" title="class in com.truelayer.java">ClientCredentials</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/truelayer/java/auth/AuthenticationHandler.html#getClientCredentials--">getClientCredentials</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;<a href="../../../../com/truelayer/java/http/entities/ApiResponse.html" title="class in com.truelayer.java.http.entities">ApiResponse</a>&lt;<a href="../../../../com/truelayer/java/auth/entities/AccessToken.html" title="class in com.truelayer.java.auth.entities">AccessToken</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/truelayer/java/auth/AuthenticationHandler.html#getOauthToken-java.util.List-">getOauthToken</a></span>(java.util.List&lt;java.lang.String&gt;&nbsp;scopes)</code>
 <div class="block">Gets an <i>OAuth</i> access token for the given scope(s).</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/truelayer/java/auth/AuthenticationHandler.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../com/truelayer/java/auth/AuthenticationHandlerBuilder.html" title="class in com.truelayer.java.auth">AuthenticationHandlerBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/truelayer/java/auth/AuthenticationHandler.html#New--">New</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/truelayer/java/auth/AuthenticationHandler.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -165,7 +186,7 @@ implements <a href="../../../../com/truelayer/java/auth/IAuthenticationHandler.h
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -181,13 +202,15 @@ implements <a href="../../../../com/truelayer/java/auth/IAuthenticationHandler.h
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AuthenticationHandler--">
+<a name="AuthenticationHandler-com.truelayer.java.ClientCredentials-com.truelayer.java.auth.IAuthenticationApi-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AuthenticationHandler</h4>
-<pre>public&nbsp;AuthenticationHandler()</pre>
+<pre>@ConstructorProperties(value={"clientCredentials","authenticationApi"})
+public&nbsp;AuthenticationHandler(<a href="../../../../com/truelayer/java/ClientCredentials.html" title="class in com.truelayer.java">ClientCredentials</a>&nbsp;clientCredentials,
+                                                                                                     <a href="../../../../com/truelayer/java/auth/IAuthenticationApi.html" title="interface in com.truelayer.java.auth">IAuthenticationApi</a>&nbsp;authenticationApi)</pre>
 </li>
 </ul>
 </li>
@@ -210,7 +233,7 @@ implements <a href="../../../../com/truelayer/java/auth/IAuthenticationHandler.h
 <a name="getOauthToken-java.util.List-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getOauthToken</h4>
 <pre>public&nbsp;java.util.concurrent.CompletableFuture&lt;<a href="../../../../com/truelayer/java/http/entities/ApiResponse.html" title="class in com.truelayer.java.http.entities">ApiResponse</a>&lt;<a href="../../../../com/truelayer/java/auth/entities/AccessToken.html" title="class in com.truelayer.java.auth.entities">AccessToken</a>&gt;&gt;&nbsp;getOauthToken(java.util.List&lt;java.lang.String&gt;&nbsp;scopes)</pre>
@@ -225,6 +248,63 @@ implements <a href="../../../../com/truelayer/java/auth/IAuthenticationHandler.h
 <dd>the response of the <i>Generate Access token</i> operation</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://docs.truelayer.com/reference/generateaccesstoken"><i>Generate Access token</i> API reference</a></dd>
+</dl>
+</li>
+</ul>
+<a name="getClientCredentials--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClientCredentials</h4>
+<pre>public&nbsp;<a href="../../../../com/truelayer/java/ClientCredentials.html" title="class in com.truelayer.java">ClientCredentials</a>&nbsp;getClientCredentials()</pre>
+</li>
+</ul>
+<a name="getAuthenticationApi--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAuthenticationApi</h4>
+<pre>public&nbsp;<a href="../../../../com/truelayer/java/auth/IAuthenticationApi.html" title="interface in com.truelayer.java.auth">IAuthenticationApi</a>&nbsp;getAuthenticationApi()</pre>
+</li>
+</ul>
+<a name="equals-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(java.lang.Object&nbsp;o)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="hashCode--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>

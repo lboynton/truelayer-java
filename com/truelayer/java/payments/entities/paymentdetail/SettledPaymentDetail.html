@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">SettledPaymentDetail</span>
+<pre>public final class <span class="typeNameLabel">SettledPaymentDetail</span>
 extends <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html" title="class in com.truelayer.java.payments.entities.paymentdetail">PaymentDetail</a></pre>
 </li>
 </ul>
@@ -132,7 +132,11 @@ extends <a href="../../../../../../com/truelayer/java/payments/entities/paymentd
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#SettledPaymentDetail--">SettledPaymentDetail</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#SettledPaymentDetail-com.truelayer.java.entities.PaymentSource-java.util.Date-java.util.Date-java.util.Date-com.truelayer.java.payments.entities.paymentdetail.AuthorizationFlowWithConfiguration-">SettledPaymentDetail</a></span>(<a href="../../../../../../com/truelayer/java/entities/PaymentSource.html" title="class in com.truelayer.java.entities">PaymentSource</a>&nbsp;paymentSource,
+                    java.util.Date&nbsp;succeededAt,
+                    java.util.Date&nbsp;settledAt,
+                    java.util.Date&nbsp;executedAt,
+                    <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/AuthorizationFlowWithConfiguration.html" title="class in com.truelayer.java.payments.entities.paymentdetail">AuthorizationFlowWithConfiguration</a>&nbsp;authorizationFlow)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -150,8 +154,44 @@ extends <a href="../../../../../../com/truelayer/java/payments/entities/paymentd
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#canEqual-java.lang.Object-">canEqual</a></span>(java.lang.Object&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/AuthorizationFlowWithConfiguration.html" title="class in com.truelayer.java.payments.entities.paymentdetail">AuthorizationFlowWithConfiguration</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#getAuthorizationFlow--">getAuthorizationFlow</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>java.util.Date</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#getExecutedAt--">getExecutedAt</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/truelayer/java/entities/PaymentSource.html" title="class in com.truelayer.java.entities">PaymentSource</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#getPaymentSource--">getPaymentSource</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.util.Date</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#getSettledAt--">getSettledAt</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/Status.html" title="enum in com.truelayer.java.payments.entities.paymentdetail">Status</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#getStatus--">getStatus</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>java.util.Date</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#getSucceededAt--">getSucceededAt</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/SettledPaymentDetail.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -159,14 +199,14 @@ extends <a href="../../../../../../com/truelayer/java/payments/entities/paymentd
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.truelayer.java.payments.entities.paymentdetail.<a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html" title="class in com.truelayer.java.payments.entities.paymentdetail">PaymentDetail</a></h3>
-<code><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asAuthorizationRequiredPaymentDetail--">asAuthorizationRequiredPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asAuthorizedPaymentDetail--">asAuthorizedPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asAuthorizingPaymentDetail--">asAuthorizingPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asFailedPaymentDetail--">asFailedPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asSettledPaymentDetail--">asSettledPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asSucceededPaymentDetail--">asSucceededPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getStatus--">getStatus</a></code></li>
+<code><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asAuthorizationRequiredPaymentDetail--">asAuthorizationRequiredPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asAuthorizedPaymentDetail--">asAuthorizedPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asAuthorizingPaymentDetail--">asAuthorizingPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asFailedPaymentDetail--">asFailedPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asSettledPaymentDetail--">asSettledPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#asSucceededPaymentDetail--">asSucceededPaymentDetail</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getAmountInMinor--">getAmountInMinor</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getCreatedAt--">getCreatedAt</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getCurrency--">getCurrency</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getId--">getId</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getPaymentMethod--">getPaymentMethod</a>, <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getUser--">getUser</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -182,13 +222,18 @@ extends <a href="../../../../../../com/truelayer/java/payments/entities/paymentd
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SettledPaymentDetail--">
+<a name="SettledPaymentDetail-com.truelayer.java.entities.PaymentSource-java.util.Date-java.util.Date-java.util.Date-com.truelayer.java.payments.entities.paymentdetail.AuthorizationFlowWithConfiguration-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SettledPaymentDetail</h4>
-<pre>public&nbsp;SettledPaymentDetail()</pre>
+<pre>@ConstructorProperties(value={"paymentSource","succeededAt","settledAt","executedAt","authorizationFlow"})
+public&nbsp;SettledPaymentDetail(<a href="../../../../../../com/truelayer/java/entities/PaymentSource.html" title="class in com.truelayer.java.entities">PaymentSource</a>&nbsp;paymentSource,
+                                                                                                                                       java.util.Date&nbsp;succeededAt,
+                                                                                                                                       java.util.Date&nbsp;settledAt,
+                                                                                                                                       java.util.Date&nbsp;executedAt,
+                                                                                                                                       <a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/AuthorizationFlowWithConfiguration.html" title="class in com.truelayer.java.payments.entities.paymentdetail">AuthorizationFlowWithConfiguration</a>&nbsp;authorizationFlow)</pre>
 </li>
 </ul>
 </li>
@@ -202,10 +247,107 @@ extends <a href="../../../../../../com/truelayer/java/payments/entities/paymentd
 <a name="getAuthorizationFlow--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getAuthorizationFlow</h4>
 <pre>public&nbsp;java.util.Optional&lt;<a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/AuthorizationFlowWithConfiguration.html" title="class in com.truelayer.java.payments.entities.paymentdetail">AuthorizationFlowWithConfiguration</a>&gt;&nbsp;getAuthorizationFlow()</pre>
+</li>
+</ul>
+<a name="getStatus--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatus</h4>
+<pre>public&nbsp;<a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/Status.html" title="enum in com.truelayer.java.payments.entities.paymentdetail">Status</a>&nbsp;getStatus()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html#getStatus--">getStatus</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/truelayer/java/payments/entities/paymentdetail/PaymentDetail.html" title="class in com.truelayer.java.payments.entities.paymentdetail">PaymentDetail</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPaymentSource--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPaymentSource</h4>
+<pre>public&nbsp;<a href="../../../../../../com/truelayer/java/entities/PaymentSource.html" title="class in com.truelayer.java.entities">PaymentSource</a>&nbsp;getPaymentSource()</pre>
+</li>
+</ul>
+<a name="getSucceededAt--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSucceededAt</h4>
+<pre>public&nbsp;java.util.Date&nbsp;getSucceededAt()</pre>
+</li>
+</ul>
+<a name="getSettledAt--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSettledAt</h4>
+<pre>public&nbsp;java.util.Date&nbsp;getSettledAt()</pre>
+</li>
+</ul>
+<a name="getExecutedAt--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExecutedAt</h4>
+<pre>public&nbsp;java.util.Date&nbsp;getExecutedAt()</pre>
+</li>
+</ul>
+<a name="toString--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="equals-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(java.lang.Object&nbsp;o)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="canEqual-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>canEqual</h4>
+<pre>protected&nbsp;boolean&nbsp;canEqual(java.lang.Object&nbsp;other)</pre>
+</li>
+</ul>
+<a name="hashCode--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
 </li>
 </ul>
 </li>
